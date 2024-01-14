@@ -35,34 +35,28 @@ nav a {
 }
 
 .header-p {
-  background: #2e333a;
-  color: #fff;
-  border-radius: 8px;
-  border: #fff solid 3px;
-  width: 191px;
-  height: 171px;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 1.5em;
-  z-index: 1;
-}
-
-.header-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
-  position: relative;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    min-width: 190px;
 }
 
 .header-image {
-  width: 100%;
-  position: absolute;
+    width: 100%;
+    height: auto;
+    display: block;
+    mask-image: linear-gradient(to top, transparent 0%, black 100%);
 }
+
+.header-p p {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
 
 @media only screen and (max-width: 600px) {
   nav {
